@@ -1,0 +1,295 @@
+
+.bottom-line {
+    margin-top: 40px;
+    display: none;
+    justify-content: space-between;
+
+}
+
+body {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.burger-icon {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    z-index: 15;
+}
+.burger-icon:hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    cursor: pointer;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    max-width:300px;
+    background-color: #17e093;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 8%;
+    align-self: center;
+    justify-self: center;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    max-width:250px;
+    max-height: 250px;
+    margin-top: 10px;
+    border-radius: 30%;
+    border: white solid 4px;
+}
+
+.card-name {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.grid-cards {
+    display: grid;
+    row-gap: 35px;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 70px;
+
+}
+.grid-cards-Train {
+    display: grid;
+    row-gap: 35px;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 70px;
+
+}
+.burger-menu {
+    flex-direction: column;
+    background: coral;
+    width: 50%;
+    height: 100vh;
+    z-index: 15;
+    position: fixed;
+    align-items: center;
+    gap: 40px;
+    padding-top: 130px;
+    border-radius: 10px;
+}
+.burger-links {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.burger-links:hover {
+    color: white;
+    cursor: pointer;
+}
+.closed {
+    display: none;
+}
+.open {
+    display: flex;
+}
+.card-rotate {
+    width: 100%;
+    height: 100%;
+    max-height: 40px;
+    max-width: 40px;
+}
+.rotate {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+.toggle-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 8;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 25px;
+}
+.card:hover {
+    box-shadow: 4px 4px 5px #fffb00;
+}
+.card-absolute{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 3;
+}
+.card-rotate{
+    position: absolute;
+    bottom:2px;
+    z-index: 10;
+}
+.card-name:hover {
+    cursor: default;
+    color: white;
+    text-shadow: 1px 1px 1px blue;
+}
+.card-rotate:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-img:hover {
+    border: blue solid 4px;
+}
+
+.card-img-train {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 30%;
+    border: white solid 4px;
+
+}
+.learn {
+    display: none;
+}
+.train {
+    display: none;
+}
+.train-card {
+    background-color: purple;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 4;
+}
+.overlay.active {
+    display: block;
+}
+.star-box {
+    display: inline;
+    gap: 2px;
+
+
+}
+.start-button {
+    width: 60px;
+    height: 50px;
+    z-index: 7;
+    border-radius: 10px ;
+}
+.static-card {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.page-tries {
+    display: flex;
+    gap: 35px;
+}
+.static-card {
+    border-bottom: 5px solid #ffffff;
+    background-color: #117211;
+    color: rgb(101, 6, 6);
+    padding-left: 5px;
+}
+.page {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: green;
+}
+.statistic {
+    display: none;
+}
+.active {
+    display: block;
+}
+.card-block {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+}
