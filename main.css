@@ -191,5 +191,9 @@ a {
         gap: 10px;
     }
 }
-
+@media only screen and (max-width: 1000px) {
+    .grid-cards {
+        grid-template-columns: 300px;
+    }
+}
 

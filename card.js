@@ -1745,7 +1745,6 @@ checkbox.addEventListener('change', (event) => {
         let bottom = document.querySelector(".bottom-line")
         grid_cards_train.classList.remove("train")
         grid_card.classList.add("learn")
-        overlay.classList.add("active")
         bottom.classList.add("open")
     }
 })

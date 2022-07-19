@@ -122,14 +122,14 @@ input:checked + .slider:before {
 }
 .grid-cards {
     display: grid;
-    row-gap: 35px;
+    gap: 35px;
     grid-template-columns: 25% 25% 25% 25%;
     margin-top: 70px;
 
 }
 .grid-cards-Train {
     display: grid;
-    row-gap: 35px;
+    gap: 35px;
     grid-template-columns: 25% 25% 25% 25%;
     margin-top: 70px;
 
@@ -292,4 +292,39 @@ input:checked + .slider:before {
     height: 100%;
     z-index: 5;
     position: absolute;
+}
+@media only screen and (max-width: 1300px) {
+
+    .page {
+        grid-template-columns: 300px 300px;
+    }
+    .static-card {
+        grid-template-columns:  300px 300px;
+    }
+    .grid-cards-Train {
+        grid-template-columns:  300px 300px;
+    }
+    .grid-cards {
+        grid-template-columns:  300px 300px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .page {
+        grid-template-columns: 300px;
+    }
+    .static-card {
+        grid-template-columns:  300px;
+    }
+    .grid-cards-Train {
+        grid-template-columns:  300px;
+    }
+    .grid-cards {
+        grid-template-columns:  300px;
+        align-items: center;
+        justify-content: center;
+    }
 }
